@@ -1,0 +1,30 @@
+{
+  "name": "Destinator",
+  "authors": [
+    "susanir <susan_susan_susan1234@yahoo.es>"
+  ],
+  "description": "Website para ayudar a elegir destino a los opositores aprobados",
+  "main": "index.html",
+  "keywords": [
+    "destinator",
+    "destinos",
+    "oposiciones"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3",
+    "angular": "^1.4.7",
+    "angular-ui-router": "^0.3.1",
+    "ng-dialog": "ngDialog#^0.6.4",
+    "angular-resource": "^1.5.8"
+  }
+}

@@ -1,0 +1,178 @@
+
+	<div class="container" ng-controller="ContentController">
+		<div class="row row-content">
+			  <h2>Destinos ofertados</h2>
+			  <div class="table-responsive">
+				  <table class="table table-striped table-hover">
+				    <thead>
+				      <tr>
+				        <th>PUESTO NÚMERO</th>
+				        <th>CENTRO DIRECTIVO / OO.AA.</th>
+				        <th>CENTRO DE DESTINO</th>
+				        <th>PROVINCIA</th>
+				        <th>LOCALIDAD</th>
+				        <th>PUESTO DE TRABAJO</th>
+				        <th>NIVEL C.D</th>
+				        <th>COMP.ESPECÍFICO</th>
+				        <th>COMP. DESTINO</th>
+				        <th>COMP. PRODUCTIVIDAD</th>
+				        <th>SUELDO BASE</th>
+				        <th>DIRECCIÓN</th>
+				        <th>TELÉFONO</th>
+				        <th>HORARIO / FLEXIBILIDAD</th>
+				        <th>DESCRIPCIÓN TRABAJO (PROGRAMACIÓN, SISTEMAS,...)</th>
+				        <th>PRODUCTIVIDAD (TARDES,...)</th>
+				        <th>TRANSPORTE PÚBLICO</th>
+				        <th>APARCAMIENTO</th> 
+				        <th>AYUDAS ESTUDIOS</th>
+				        <th>AYUDAS PREPARACIÓN CUERPOS SUPERIORES (PERMISOS, BECAS, ...)</th>
+				        <th>CONCILIACIÓN</th>
+				        <th>ACCIÓN SOCIAL</th>
+				        <th>BONO TRANSPORTE</th>
+				        <th>COMEDOR, PRECIO</th>
+				        <th>PERSPECTIVAS DE PROMOCIÓN, FRECUENCIA CONCURSOS, POSIBILIDADES DE MOVILIDAD GEOGRÁFICA</th>
+				        <th>CARA PÚBLICO / FUNCIONARIOS</th>
+				        <th>PRESENCIA EXTERNOS</th>
+				        <th>OBSERVACIONES</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td>1</td>
+				        <td>DELEGACION DEL GOBIERNO EN ANDALUCIA</td>
+				        <td>SUBDELEGACION DEL GOBIERNO ALMERIA - SECRETARIA GENERAL</td>
+				        <td>ALMERIA</td>
+				        <td>ALMERIA</td>
+				        <td>PROGRAMADOR DE SEGUNDA, 4691813</td>
+				        <td>15</td>
+				        <td>3.476,68</td>
+				        <td>{{feedback.mychannel}}</td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				      </tr>
+				      <tr>
+				        <td>2</td>
+				        <td>DELEGACION DEL GOBIERNO EN CATALUÑA</td>
+				        <td>DELEGACION DEL GOBIERNO EN CATALUÑA - SECRETARIA GENERAL</td>
+				        <td>BARCELONA</td>
+				        <td>BARCELONA</td>
+				        <td>PROGRAMADOR DE SEGUNDA, 4692048</td>
+				        <td>15</td>
+				        <td>3.476,68</td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				      </tr>
+				      <tr>
+				        <td>3</td>
+				        <td>DELEGACION DEL GOBIERNO EN CATALUÑA</td>
+				        <td>OFICINA DE EXTRANJEROS EN GIRONA</td>
+				        <td>GIRONA</td>
+				        <td>GIRONA</td>
+				        <td>JEFE RED INFORMATICA, 4674631</td>
+				        <td>17</td>
+				        <td>4.730,40</td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				      </tr>
+				    </tbody>
+				  </table>
+			  </div>
+            </div>
+        </div>
+        <div class="row row-content"
+                      ng-init="
+                         dishes=[
+                         {
+                           name:'Uthapizza',
+                           image: 'images/uthapizza.png',
+                           category: 'mains',
+                           label:'Hot',
+                           price:'4.99',
+                           description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
+                           comment: ''
+                        },
+                        {
+                           name:'Zucchipakoda',
+                           image: 'images/zucchipakoda.png',
+                           category: 'appetizer',
+                           label:'',
+                           price:'1.99',
+                           description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce',
+                           comment: ''
+                        }]">
+                        	
+                        </div>
+         <div class="col-xs-12">
+               <ul class="media-list">
+                <li class="media" ng-repeat="dish in dishes">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                        <img class="media-object img-thumbnail"
+                         ng-src={{dish.image}} alt="Uthappizza">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading">{{dish.name}}
+                         <span class="label label-danger">{{dish.label}}</span>
+                         <span class="badge">{{dish.price | currency}}</span></h2>
+                        <p>{{dish.description}}</p>
+                        <p>Comment: {{dish.comment}}</p>
+                        <p>Type your comment:
+                         <input type="text" ng-model="dish.comment"></p>
+                    </div>
+                </li>
+            </ul>
+            </div>
